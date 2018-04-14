@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 mongoose.set('debug', true);
 
-mongoose.connect('mongodb://localhost/warbler', {
+mongoose.connect(process.env.MONGODB_SERVER, {
   keepAlive: true
 });
 
